@@ -14,6 +14,7 @@ MongoClient.connect(
         useNewUrlParser:true
     }
 ).catch(err=>{
+    console.log(`worked well here`)
     console.error(err.stack)
     process.exit(1)
 }).then(async client=>{
